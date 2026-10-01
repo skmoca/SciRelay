@@ -1,0 +1,7 @@
+-r requirements.txt
+huggingface-hub==0.34.4
+safetensors==0.5.3
+sentencepiece==0.2.0
+tokenizers==0.22.2
+torch==2.4.1
+transformers==4.57.0

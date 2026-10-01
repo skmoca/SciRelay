@@ -1,0 +1,17 @@
+{
+  "model_id": "sentence-transformers/allenai-specter",
+  "revision": "2c68eeca61259b2dd70c3f2628219f925df7031a",
+  "pooling": "L2-normalized final-layer [CLS] embedding",
+  "document_format": "title [SEP] abstract",
+  "query_format": "claim text",
+  "max_length": 512,
+  "hidden_size": 768,
+  "documents": 5183,
+  "queries": 1109,
+  "dtype": "float32",
+  "device": "cuda",
+  "torch": "2.4.1+cu121",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 99.72222638130188
+}

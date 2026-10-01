@@ -1,0 +1,43 @@
+{
+  "config": {
+    "data_dir": "data/raw/trec-covid",
+    "output_dir": "results/trec_covid",
+    "split": "test",
+    "n_agents": 8,
+    "bid_limit": 4,
+    "method_weights": {
+      "rank": 0.35,
+      "lexical": 0.29,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "budgets": [
+      2,
+      4,
+      8
+    ],
+    "seeds": [
+      11,
+      23,
+      47,
+      89,
+      131
+    ],
+    "scenarios": [
+      "homogeneous",
+      "heterogeneous",
+      "faulty",
+      "imbalanced"
+    ],
+    "query_limit": null
+  },
+  "quick": false,
+  "documents": 171332,
+  "queries_train": 0,
+  "queries_test": 50,
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 769.0658359527588,
+  "result_path": "results\\trec_covid\\results_full.csv"
+}

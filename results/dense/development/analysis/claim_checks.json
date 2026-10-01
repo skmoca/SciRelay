@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "model_scenarios_complete": {
+      "passed": true,
+      "scenarios": [
+        "dense_faulty",
+        "dense_homogeneous",
+        "lexical_dense_heterogeneous"
+      ]
+    },
+    "all_budgets_complete": {
+      "passed": true,
+      "budgets": [
+        2,
+        4,
+        8
+      ]
+    },
+    "finite_metrics": {
+      "passed": true
+    }
+  }
+}

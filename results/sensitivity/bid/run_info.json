@@ -1,0 +1,77 @@
+{
+  "development_only": true,
+  "part": "bid",
+  "query_limit": null,
+  "weights": {
+    "base": {
+      "rank": 0.35,
+      "lexical": 0.29,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "rank_minus20": {
+      "rank": 0.28,
+      "lexical": 0.29,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "rank_plus20": {
+      "rank": 0.42,
+      "lexical": 0.29,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "lexical_minus20": {
+      "rank": 0.35,
+      "lexical": 0.232,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "lexical_plus20": {
+      "rank": 0.35,
+      "lexical": 0.348,
+      "coverage": 0.16,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "coverage_minus20": {
+      "rank": 0.35,
+      "lexical": 0.29,
+      "coverage": 0.128,
+      "margin": 0.0,
+      "diversity": 0.0
+    },
+    "coverage_plus20": {
+      "rank": 0.35,
+      "lexical": 0.29,
+      "coverage": 0.192,
+      "margin": 0.0,
+      "diversity": 0.0
+    }
+  },
+  "reference_baseline": {
+    "homogeneous": "raw_score",
+    "heterogeneous": "rrf",
+    "faulty": "zscore_score",
+    "imbalanced": "raw_score"
+  },
+  "seeds": [
+    11,
+    47,
+    131
+  ],
+  "weight_scenarios": [
+    "heterogeneous",
+    "faulty"
+  ],
+  "bid_scenarios": [
+    "heterogeneous",
+    "faulty"
+  ],
+  "scale_probe_agents": 16,
+  "record_count": 32400
+}

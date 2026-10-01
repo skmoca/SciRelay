@@ -1,0 +1,19 @@
+{
+  "claims": {
+    "C1": {
+      "description": "SciRelay beats the strongest decentralized baseline at every budget in the eight-agent heterogeneous and faulty scenarios.",
+      "passed": true,
+      "minimum_mean_difference": 0.021146052629727387
+    },
+    "C2": {
+      "description": "Every paired bootstrap 95% interval for those comparisons has a positive lower bound.",
+      "passed": false,
+      "minimum_ci95_low": -0.022030537403645477
+    },
+    "C3": {
+      "description": "SciRelay bid-sketch bytes are below 25% of relayed payload bytes.",
+      "passed": false,
+      "control_to_payload_ratio": 0.36270398084620725
+    }
+  }
+}

@@ -1,0 +1,19 @@
+data_dir: data/raw/scifact-beir
+embedding_dir: results/dense/cache/specter
+output_dir: results/dense/development
+split: test
+n_agents: 8
+bid_limit: 4
+method_weights:
+  rank: 0.35
+  lexical: 0.29
+  coverage: 0.16
+  margin: 0.0
+  diversity: 0.0
+budgets: [2, 4, 8]
+seeds: [11, 23, 47, 89, 131]
+scenarios:
+  - dense_homogeneous
+  - lexical_dense_heterogeneous
+  - dense_faulty
+query_limit: null

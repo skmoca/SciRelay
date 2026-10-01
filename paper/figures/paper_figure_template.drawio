@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2026-08-02T00:00:00.000Z" agent="Codex" version="24.7.17" type="device" compressed="false">
+  <diagram id="paper-figure-template" name="Paper concept template">
+    <mxGraphModel dx="1600" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="520" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="background" value="BACKGROUND" parent="0"/>
+        <mxCell id="arrows" value="ARROWS" parent="0"/>
+        <mxCell id="shapes" value="SHAPES" parent="0"/>
+        <mxCell id="labels" value="LABELS" parent="0"/>
+
+        <!-- Keep the three stage panels on BACKGROUND. -->
+        <mxCell id="panel-input" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F8FC;strokeColor=#B8C5DD;strokeWidth=1.5;arcSize=12;" vertex="1" parent="background">
+          <mxGeometry x="50" y="80" width="390" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="panel-method" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F1;strokeColor=#E9BD82;strokeWidth=1.5;arcSize=12;" vertex="1" parent="background">
+          <mxGeometry x="500" y="80" width="500" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="panel-output" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4FBF5;strokeColor=#9BC7A1;strokeWidth=1.5;arcSize=12;" vertex="1" parent="background">
+          <mxGeometry x="1060" y="80" width="340" height="270" as="geometry"/>
+        </mxCell>
+
+        <!-- Put every connector on ARROWS; leave value empty so labels never cover lines. -->
+        <mxCell id="e-query-a1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="query" target="agent1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-query-a2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="query" target="agent2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-query-a3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="query" target="agent3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-a1-bus" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="agent1" target="controlbus"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-a2-bus" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="agent2" target="controlbus"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-a3-bus" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="agent3" target="controlbus"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-bus-normalize" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="controlbus" target="normalize"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-normalize-select" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="normalize" target="select"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-select-gate" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="select" target="gate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-gate-output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="gate" target="payload"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e-payload-downstream" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;" edge="1" parent="arrows" source="payload" target="downstream"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Replace these shapes with the modules of your own method. -->
+        <mxCell id="query" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#475569;strokeWidth=1.5;" vertex="1" parent="shapes"><mxGeometry x="75" y="190" width="62" height="62" as="geometry"/></mxCell>
+        <mxCell id="agent1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FF;strokeColor=#7B9AE8;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="170" y="120" width="160" height="48" as="geometry"/></mxCell>
+        <mxCell id="agent2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FF;strokeColor=#7B9AE8;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="170" y="190" width="160" height="48" as="geometry"/></mxCell>
+        <mxCell id="agent3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FF;strokeColor=#7B9AE8;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="170" y="260" width="160" height="48" as="geometry"/></mxCell>
+        <mxCell id="controlbus" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF7F2;strokeColor=#42A89C;strokeWidth=1.5;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="355" y="170" width="55" height="92" as="geometry"/></mxCell>
+        <mxCell id="normalize" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0D9;strokeColor=#E09A42;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="540" y="125" width="175" height="58" as="geometry"/></mxCell>
+        <mxCell id="select" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0D9;strokeColor=#E09A42;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="760" y="125" width="175" height="58" as="geometry"/></mxCell>
+        <mxCell id="gate" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E9;strokeColor=#78B978;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="650" y="250" width="180" height="58" as="geometry"/></mxCell>
+        <mxCell id="payload" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E9;strokeColor=#78B978;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="1085" y="170" width="145" height="58" as="geometry"/></mxCell>
+        <mxCell id="downstream" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;strokeWidth=1.4;arcSize=10;" vertex="1" parent="shapes"><mxGeometry x="1260" y="170" width="115" height="58" as="geometry"/></mxCell>
+
+        <!-- All visible text is on LABELS. Keep labels 12 to 15 px apart from borders. -->
+        <mxCell id="title" value="METHOD OVERVIEW — replace labels, keep geometry" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#1E293B;" vertex="1" parent="labels"><mxGeometry x="52" y="25" width="520" height="30" as="geometry"/></mxCell>
+        <mxCell id="stage-input" value="INPUT / LOCAL VIEWS" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#64748B;" vertex="1" parent="labels"><mxGeometry x="72" y="92" width="220" height="24" as="geometry"/></mxCell>
+        <mxCell id="stage-method" value="COORDINATION / METHOD" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#A16207;" vertex="1" parent="labels"><mxGeometry x="522" y="92" width="260" height="24" as="geometry"/></mxCell>
+        <mxCell id="stage-output" value="OUTPUT / EVALUATION" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#3F7D45;" vertex="1" parent="labels"><mxGeometry x="1082" y="92" width="250" height="24" as="geometry"/></mxCell>
+        <mxCell id="l-query" value="research query" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#334155;" vertex="1" parent="labels"><mxGeometry x="55" y="257" width="105" height="22" as="geometry"/></mxCell>
+        <mxCell id="l-a1" value="Module A\nlocal evidence" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#1E3A8A;" vertex="1" parent="labels"><mxGeometry x="185" y="127" width="130" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-a2" value="Module B\nlocal evidence" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#1E3A8A;" vertex="1" parent="labels"><mxGeometry x="185" y="197" width="130" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-a3" value="Module C\nlocal evidence" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#1E3A8A;" vertex="1" parent="labels"><mxGeometry x="185" y="267" width="130" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-bus" value="CONTROL\nBUS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#0F766E;" vertex="1" parent="labels"><mxGeometry x="355" y="190" width="55" height="50" as="geometry"/></mxCell>
+        <mxCell id="l-normalize" value="normalize\nshared signal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#92400E;" vertex="1" parent="labels"><mxGeometry x="555" y="137" width="145" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-select" value="select\ncomplementary set" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#92400E;" vertex="1" parent="labels"><mxGeometry x="775" y="137" width="145" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-gate" value="budget / safety\ngate (at most B)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#166534;" vertex="1" parent="labels"><mxGeometry x="665" y="262" width="150" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-payload" value="selected\npayloads" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#166534;" vertex="1" parent="labels"><mxGeometry x="1095" y="182" width="125" height="35" as="geometry"/></mxCell>
+        <mxCell id="l-downstream" value="downstream\ntask" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#334155;" vertex="1" parent="labels"><mxGeometry x="1265" y="182" width="105" height="35" as="geometry"/></mxCell>
+        <mxCell id="legend-dashed" value="" style="edgeStyle=none;dashed=1;dashPattern=6 5;strokeColor=#475569;strokeWidth=1.8;endArrow=classic;" edge="1" parent="labels"><mxGeometry relative="1" as="geometry"><mxPoint x="520" y="405" as="sourcePoint"/><mxPoint x="575" y="405" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="legend-solid" value="" style="edgeStyle=none;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;" edge="1" parent="labels"><mxGeometry relative="1" as="geometry"><mxPoint x="760" y="405" as="sourcePoint"/><mxPoint x="815" y="405" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="legend-text" value="dashed = control / sketch     solid = payload / evidence" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#64748B;" vertex="1" parent="labels"><mxGeometry x="585" y="393" width="360" height="24" as="geometry"/></mxCell>
+        <mxCell id="instruction" value="Editing recipe: change LABELS first; keep SHAPES and ARROWS aligned; use one visual verb per arrow." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontColor=#64748B;" vertex="1" parent="labels"><mxGeometry x="230" y="445" width="990" height="24" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

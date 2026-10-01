@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": {
+    "complete_query_count": true,
+    "gold_oracle_above_chance": true,
+    "all_scenarios_present": true
+  }
+}

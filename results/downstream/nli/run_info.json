@@ -1,0 +1,22 @@
+{
+  "evaluation_split": "SciFact conventional train / 809-query held-out confirmation",
+  "labeled_queries": 505,
+  "model_id": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "model_revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "model_training_data": "MNLI, FEVER, and ANLI; no SciFact fine-tuning",
+  "input_order": "premise=full title and abstract; hypothesis=claim",
+  "aggregation": "within each relay set choose the document with maximum entailment-or-contradiction probability; average its entailment-minus-contradiction margin across shard seeds",
+  "budget": 4,
+  "pair_count": 8953,
+  "gold_evidence_oracle": {
+    "accuracy": 0.8356435643564356,
+    "balanced_accuracy": 0.8030242356710078,
+    "macro_f1": 0.8117237507018529
+  },
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "torch": "2.4.1+cu121",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 1.2779765129089355
+}
