@@ -2,7 +2,7 @@
 
 DAI 2026 oral 论文 **SciRelay: Calibrated Bid-and-Relay for Communication-Bounded Scientific Evidence Retrieval** 的开源实现与实验记录。
 
-作者：Wenbin Ma（马文斌），Jiangnan University（江南大学）。
+作者：Wenbin Ma（马文彬），Jiangnan University（江南大学）。
 
 - 仓库：https://github.com/skmoca/SciRelay
 - 论文：[paper/scirelay-camera-ready.pdf](paper/scirelay-camera-ready.pdf)
